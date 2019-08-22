@@ -18,7 +18,7 @@ int main (int argc, char *argv[]) {
 	{
 		printf("O programa monitora o uso da memória e da UCP de uma simulação de uso intenso dos mesmos.\n");
 		printf("uso: %s [modo] [arquivo de despejo]\n", argv[0]);
-		printf("\tmodos:\tcpu\t<uso intenso da upc>\n\t\tcpu-mem\t<uso intenso da ucp e memória principal>\n");
+		printf("\tmodos:\tucp\t<uso intenso da ucp>\n\t\tucp-mem\t<uso intenso da ucp e memória principal>\n");
 		printf("\toutput:\tO ouput padrão de arquivo é o arquivo usage.out\n\t\tCaso queira outro arquivo, especificá-lo no argumento de terminal.\n");
 		printf("\t\tCaso não queira um arquivo de output, digitar -no no argumento de terminal.\n");
 		exit(0);
@@ -26,9 +26,9 @@ int main (int argc, char *argv[]) {
 	else
 	{
 		// this part of the code creates a prevent way about the invalid options that was put by user
-		if (strcmp(argv[1], "cpu-mem") == 0) // intern use by ucp and memory (using flag)
+		if (strcmp(argv[1], "ucp-mem") == 0) // intern use by ucp and memory (using flag)
 			mode = 1;
-		else if (strcmp(argv[1], "cpu") == 0) // intern use by memory (using flag)
+		else if (strcmp(argv[1], "ucp") == 0) // intern use by memory (using flag)
 			mode = 2;
 		else
 		{

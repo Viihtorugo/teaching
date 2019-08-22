@@ -1,4 +1,4 @@
-# Comandos dos testes
+# Comandos dos testes padrão
 
 ## Compilar o main.c:
 
@@ -9,14 +9,14 @@ gcc -o bin main.c
 ## Caso do uso intenso da UCP com arquivo padrão:
 
 ```alias
-./bin cpu
+./bin ucp
 ```
 
 
 ## Caso do uso intenso da UCP e memória com arquivo padrão:
 
 ```alias
-./bin cpu-mem
+./bin ucp-mem
 ```
 
 # Outros comandos 
@@ -30,22 +30,22 @@ gcc -o bin main.c
 ## Caso do uso intenso da UCP com arquivo do usuário .out:
 
 ```alias
-./bin cpu nomedoarquivo.out
+./bin ucp nomedoarquivo.out
 ```
 
 ## Caso do uso intenso da UCP sem arquivo:
 
 ```alias
-./bin cpu -no
+./bin ucp -no
 ```
 
-## Caso do uso intenso da UCP com arquivo do usuário .out:
+## Caso do uso intenso da UCP e memória com arquivo do usuário .out:
 
 ```alias
-./bin cpu-mem nomedoarquivo.out
+./bin ucp-mem nomedoarquivo.out
 ```
 
-## Caso do uso intenso da UCP sem arquivo:
+## Caso do uso intenso da UCP e memória sem arquivo:
 
 ```alias
 ./bin cpu-mem -no
